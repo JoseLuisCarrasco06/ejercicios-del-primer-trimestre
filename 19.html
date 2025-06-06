@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 19 - Imágenes con float</title>
+    <style>
+        .left-img {
+            float: left;
+            margin-right: 15px;
+            width: 150px;
+            height: auto;
+        }
+        .right-img {
+            float: right;
+            margin-left: 15px;
+            width: 150px;
+            height: auto;
+        }
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            overflow: hidden; /* Para que el texto no quede debajo de las imágenes flotantes */
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Pierre-Person.jpg/220px-Pierre-Person.jpg" alt="Imagen izquierda" class="left-img" />
+    <p>
+        Este es un párrafo que acompaña a la imagen flotante a la izquierda. La imagen está alineada a la izquierda y el texto fluye a su lado, ocupando el resto del espacio disponible.
+    </p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/220px-Donald_Trump_official_portrait.jpg" alt="Imagen derecha" class="right-img" />
+    <p>
+        Aquí tenemos otro párrafo, esta vez junto a una imagen que flota a la derecha. El texto se ajusta al lado izquierdo de la imagen y sigue con el flujo normal debajo cuando no queda espacio.
+    </p>
+</body>
+</html>

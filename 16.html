@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 16 - Horario escolar</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .break {
+            background-color: #f2a365;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Horario escolar</caption>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00 - 9:00</td>
+                <td rowspan="2">Matemáticas</td>  <!-- Matemáticas 2 horas -->
+                <td>Lengua</td>
+                <td rowspan="3">Historia</td>    <!-- Historia 3 horas -->
+                <td>Física</td>
+                <td>Inglés</td>
+            </tr>
+            <tr>
+                <td>9:00 - 10:00</td>
+                <!-- Matemáticas continúa (rowspan) -->
+                <td>Lengua</td>
+                <!-- Historia continúa -->
+                <td>Física</td>
+                <td>Inglés</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:00</td>
+                <td>Química</td>
+                <td>Educación Física</td>
+                <!-- Historia continúa -->
+                <td>Biología</td>
+                <td>Arte</td>
+            </tr>
+            <tr class="break">
+                <td colspan="6">Recreo</td>
+            </tr>
+            <tr>
+                <td>11:30 - 12:30</td>
+                <td>Filosofía</td>
+                <td>Lengua</td>
+                <td>Matemáticas</td>
+                <td rowspan="2">Educación Física</td>  <!-- 2 horas -->
+                <td>Inglés</td>
+            </tr>
+            <tr>
+                <td>12:30 - 13:30</td>
+                <td>Filosofía</td>
+                <td>Lengua</td>
+                <td>Matemáticas</td>
+                <!-- Educación Física continúa -->
+                <td>Arte</td>
+            </tr>
+            <tr>
+                <td>13:30 - 14:30</td>
+                <td>Historia</td>
+                <td>Química</td>
+                <td>Biología</td>
+                <td>Física</td>
+                <td>Informática</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

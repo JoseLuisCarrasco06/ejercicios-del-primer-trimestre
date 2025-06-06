@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 21 - Galería de miniaturas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 20px auto;
+        }
+        .thumbnail {
+            float: left;
+            margin: 10px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            width: 150px;
+            transition: 0.3s;
+        }
+        .thumbnail:hover {
+            border-color: #777;
+            box-shadow: 0 0 8px rgba(0,0,0,0.3);
+        }
+        .thumbnail img {
+            width: 100%;
+            border-radius: 4px;
+        }
+        /* Limpia el float después de las miniaturas */
+        .gallery:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h2>Galería de miniaturas con enlaces a imágenes originales</h2>
+
+    <div class="gallery">
+        <a href="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png" target="_blank" class="thumbnail">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/PNG_transparency_demonstration_1.png/150px-PNG_transparency_demonstration_1.png" alt="Demo transparencia PNG" />
+        </a>
+
+        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Beach_in_Sardinien.jpg/1024px-Beach_in_Sardinien.jpg" target="_blank" class="thumbnail">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Beach_in_Sardinien.jpg/150px-Beach_in_Sardinien.jpg" alt="Playa en Cerdeña" />
+        </a>
+
+        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Red_Apple.jpg/1200px-Red_Apple.jpg" target="_blank" class="thumbnail">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Red_Apple.jpg/150px-Red_Apple.jpg" alt="Manzana roja" />
+        </a>
+
+        <a href="https://upload.wikimedia.org/wikipedia/commons/6/69/June_odd-eyed-cat_cropped.jpg" target="_blank" class="thumbnail">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/June_odd-eyed-cat_cropped.jpg/150px-June_odd-eyed-cat_cropped.jpg" alt="Gato con ojos diferentes" />
+        </a>
+    </div>
+</body>
+</html>

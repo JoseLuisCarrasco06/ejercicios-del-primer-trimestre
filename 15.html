@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 15 - Tabla de pedido</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        caption {
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #ddd;
+        }
+        tfoot td {
+            font-weight: bold;
+            border-top: 2px solid #333;
+        }
+        /* Ajuste para que la columna TOTAL se vea bien */
+        tfoot td[colspan="4"] {
+            text-align: right;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Su pedido</caption>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Producto</th>
+                <th>Precio unitario</th>
+                <th>Unidades</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Reproductor MP3 (80 GB)</td>
+                <td>192.02</td>
+                <td>1</td>
+                <td>192.02</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Fundas de colores</td>
+                <td>2.50</td>
+                <td>5</td>
+                <td>12.50</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Reproductor de radio & control remoto</td>
+                <td>12.99</td>
+                <td>1</td>
+                <td>12.99</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">TOTAL</td>
+                <td>207,51</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
